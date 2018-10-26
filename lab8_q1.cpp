@@ -1,16 +1,21 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-int summation(int foo[], int n, int sum){
-	
-	for (n=0; n<5; n++){
-		sum+=foo[n];
-		}
-	return sum;
-	
+int fun(int arr[] , int arrsize)
+{
+ int sum = 0;
+ for (int i = 0; i < arrsize; i++)
+ {
+  sum = sum + arr[i];
+ }
+ return sum;
 }
-int main(){
-	int n;
-	int foo[]={20, 30, 70, 124, 500};
-	cout<<"Sum of all elements of an array= "<<summation(foo,n, 0)<<endl;
-	return 0;
+ 
+ int main()
+ {
+ int arr[5] = {2,4,6,8,1};
+ int x = 0;
+ 
+ x = fun(arr, 5);
+ cout << x;
+return 0;
 }
