@@ -34,14 +34,25 @@
 	4434,4434,random value, A,C,B,A,4435,B,C,4434,B,C,B,C
 5.
 	char s[10] = "abcde";
-	char* cptr
-	// length of char array
+	char* cptr;
+	//WRITTING MY CODE
 	int n;
-	for(n =0;*(s+n)!='\0';i++);
-	// reversing loop
-	for(int i =0;i<n;i++){
-		*(cptr+i)=*(s+n-i);
+	for (n=0;*(s+n)!='\0';n++);
+	for(int i=n; i>=0; i--)
+	{
+		if(*(s+i)!='\0')
+		{ 
+			cout<<s[i];
+		}
+		else
+		{
+			cout<<"\0";
+		}
 	}
+			cout<<endl;	
+return 0;
+}
+
 6.	
 	int countEven(int* num, int n){
 		int ne=0;
