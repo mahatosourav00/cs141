@@ -66,18 +66,21 @@ return 0;
 
 
 7. 
-	  double* maximum(double* a, int size){
-	  	if(size==0)
-			return NULL;
-		double* max=a;
-		for(int i=0; i<size;i++){
-			if(*max<*(a+i)){
-				max = a+i;
-			}
+double maximum(double* a, int size){
+	double n=0;
+	if(size==0){
+		return '\0';
 		}
-		return max;
-		
-	  }
+	else{
+		for(int i=0; i<size; i++)
+		{ 
+			if(a[i]>n)
+			{n=a[i];}
+		}
+		return n;
+	}
+}
+
 8.
 	int myStrLen(char* str){
 		int i =0;
